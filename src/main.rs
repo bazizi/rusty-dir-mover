@@ -33,7 +33,6 @@ fn main() {
     let dest_dir_including_source_dir_name = dest_dir_including_source_dir_name.to_str().unwrap();
 
     // move dir to clean to dest dir
-    // let path_dir_to_move = std::path::Path::new(&dir_to_move);
     println!(
         "Moving [{}] to [{}] ...",
         dir_to_move.as_os_str().to_str().unwrap(),
