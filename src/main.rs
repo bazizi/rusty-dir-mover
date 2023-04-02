@@ -1,6 +1,5 @@
 use fs_extra::dir::{move_dir, CopyOptions};
 use std::os::windows::fs::symlink_dir;
-use std::process::Command;
 
 fn main() {
     println!("\n\n");
@@ -10,7 +9,7 @@ fn main() {
     let dest_dir = args.next();
     if dir_to_move.is_none() || dest_dir.is_none() {
         panic!(
-            r#"Usage: {} <path/to/dir/to/clean> <path/to/dest/dir>\n\n"#,
+            "\n\nUsage: {} <path/to/dir/to/clean> <path/to/dest/dir>\n\n",
             _exe_path.unwrap()
         );
     }
